@@ -4,12 +4,11 @@
    Available under the MIT (http://keith-wood.name/licence.html) license. 
    Please attribute the author if you use it. */
 
+if(typeof window !== 'undefined'){
+    $ = jQuery = require('jquery');
+}
 
 (function($) { // Hide scope, no $ conflict
-
-    if(typeof window !== 'undefined'){
-            $ = jQuery = require('jquery');
-    }
 
 /** The SVG manager.
     <p>Use the singleton instance of this class, $.svg, 
