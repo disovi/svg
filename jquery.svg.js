@@ -7,7 +7,7 @@
 
 (function($) { // Hide scope, no $ conflict
 
-    if(typeof window !== 'undefined'){
+    if(typeof window.require !== 'undefined'){
             $ = jQuery = require('jquery');
     }
 
